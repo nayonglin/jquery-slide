@@ -3,7 +3,7 @@
 
 # slide.js使用方法
 1.引入slide.js <br>
-    npm安装: npm install slide-lin --save<br>
+      &nbsp;&nbsp; npm安装: npm install slide-lin --save<br>
 2.new一个slide对象
 ```javascript
 new Slide(jQueryDom, userOptions);
@@ -33,15 +33,15 @@ new Slide(jQueryDom, userOptions);
 ### userOptions
 
 >1.__slideWidth__ <br>
-   &nbsp;&nbsp; number类型，每一页滚动多少宽度，默认为450px，如果左滑或右滑长度已经不足该值，则自动滑到底部，上例即为$('.center_slide')的宽度<br>
+   &nbsp;&nbsp; number类型，每一页滚动多少宽度，默认为450px，如果左滑或右滑长度已经不足该值，则自动滑到底部，上例即为$('.center_slide')的宽度<br><br>
 >2.__slideSpeed__<br>
-   &nbsp;&nbsp;number类型，滚动速度，单位为毫秒，默认为1000毫秒<br>
+   &nbsp;&nbsp;number类型，滚动速度，单位为毫秒，默认为1000毫秒<br><br>
 >3.__prevBtn__<br>
-   &nbsp;&nbsp;string类型，上一页按钮的选择器，默认为".prev_slide"<br>
+   &nbsp;&nbsp;string类型，上一页按钮的选择器，默认为".prev_slide"<br><br>
 >4.__nextBtn__<br>
    &nbsp;&nbsp;string类型，下一页按钮的选择器，默认为".next_slide"
 # 注意
-1.上一页事件默认绑在同时拥有prev_slide和enable两个类的元素上
+1.上一页事件默认绑在同时拥有prev_slide和enable两个类的元素上<br>
 2.上一页事件默认绑在同时拥有next_slide和enable两个类的元素上
 
 
