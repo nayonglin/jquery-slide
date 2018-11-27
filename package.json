@@ -1,0 +1,11 @@
+{
+  "name": "slide-lin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "slide.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nayonglin@outlook.com",
+  "license": "ISC"
+}
