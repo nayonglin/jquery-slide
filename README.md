@@ -2,7 +2,7 @@
 &nbsp;&nbsp;使用slide.js可以快速创建一个可以左右滑动的组件，依赖于jquery。
 
 # slide.js使用方法
-1.引入slide.js
+1.引入slide.js <br>
 2.new一个slide对象
 ```javascript
 new Slide(jQueryDom, slideWidth, slideSpeed);
@@ -27,8 +27,8 @@ new Slide(jQueryDom, slideWidth, slideSpeed);
 
 ```
 # 参数说明
-
-
+  1.jQueryDom
+        组件最外层,class
 
 
 
