@@ -3,7 +3,7 @@
 
 # slide.js使用方法
 1.引入slide.js <br>
-      &nbsp;&nbsp; npm安装: npm install slide-lin --save<br>
+      &nbsp;&nbsp; npm安装: npm install slide-lin --save<br><br>
 2.new一个slide对象
 ```javascript
 new Slide(jQueryDom, userOptions);
