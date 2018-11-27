@@ -2,7 +2,7 @@
 &nbsp;&nbsp;使用slide.js可以快速创建一个可以左右滑动的组件，依赖于jquery。
 
 # slide.js使用方法
-1.引入slide.js <br>
+1.引入slide.js <br><br>
       &nbsp;&nbsp; npm安装: npm install slide-lin --save<br><br>
 2.new一个slide对象
 ```javascript
