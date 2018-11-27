@@ -1,13 +1,13 @@
-#slide.js是什么？
+# slide.js是什么？
 &nbsp;&nbsp;使用slide.js可以快速创建一个可以左右滑动的组件。
 
-#slide.js使用方法
+# slide.js使用方法
 1.引入slide.js<br>
 2.new一个slide对象
 ```javascript
 new Slide(jQueryDom, slideWidth, slideSpeed);
 ```
-#html结构如下
+# html结构如下
 ``` html
 
 <div class="hour_rank">
@@ -26,7 +26,7 @@ new Slide(jQueryDom, slideWidth, slideSpeed);
 </div>
 
 ```
-#参数说明
+# 参数说明
 
 
 
