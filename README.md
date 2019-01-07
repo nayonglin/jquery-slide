@@ -42,7 +42,7 @@ new Slide(jQueryDom, userOptions);
    &nbsp;&nbsp;string类型，下一页按钮的选择器，默认为".next_slide"
 # 注意
 1.上一页事件默认绑在同时拥有prev_slide和enable两个类的元素上<br>
-2.上一页事件默认绑在同时拥有next_slide和enable两个类的元素上
+2.下一页事件默认绑在同时拥有next_slide和enable两个类的元素上
 
 
 
