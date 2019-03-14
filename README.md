@@ -39,11 +39,11 @@ new Slide(jQueryDom, userOptions);
 >3.__prevBtn__<br>
    &nbsp;&nbsp;string类型，上一页按钮的选择器，默认为".prev_slide"<br><br>
 >4.__nextBtn__<br>
-   &nbsp;&nbsp;string类型，下一页按钮的选择器，默认为".next_slide"
+   &nbsp;&nbsp;string类型，下一页按钮的选择器，默认为".next_slide"<br><br>
 >5.__prevCallback__<br>
-   &nbsp;&nbsp;function类型，滑动到最左边执行的回调方法
+   &nbsp;&nbsp;function类型，滑动到最左边执行的回调方法<br><br>
 >6.__nextCallback__<br>
-   &nbsp;&nbsp;function类型，滑动到最右边执行的回调方法
+   &nbsp;&nbsp;function类型，滑动到最右边执行的回调方法<br><br>
 # 注意
 1.上一页事件默认绑在同时拥有prev_slide和enable两个类的元素上<br>
 2.下一页事件默认绑在同时拥有next_slide和enable两个类的元素上
