@@ -11,6 +11,8 @@ function Slide(jqueryDom, userOptions) {
         slideSpeed: userOptions.slideSpeed || 1000, // 滚动一页的速度
         nextBtn: userOptions.nextBtn || '.next_slide', // 下一页按钮的jquery选择器
         prevBtn: userOptions.prevBtn || '.prev_slide', // 上一页按钮的jquery选择器
+        prevCallback: userOptions.prevCallback || function (){}, // 上一页动画完之后执行回调
+        nextCallback: userOptions.nextCallback || function (){} // 下一页动画完之后执行回调
     }
 
     var dom = jqueryDom;
@@ -65,8 +67,12 @@ function Slide(jqueryDom, userOptions) {
                 dom.find('.ul_slide').animate({
                     'left': '-=' + options.slideWidth
                 }, options.slideSpeed, function () {
-                    checkHasNext();
-                    checkHasPrev();
+                  var isRightEnd = checkHasNext();
+                  var isLeftEnd = checkHasPrev();
+                  options.nextCallback({
+                      isRightEnd: isRightEnd,
+                      isLeftEnd: isLeftEnd
+                  });
                 });
             }
         }
@@ -88,8 +94,12 @@ function Slide(jqueryDom, userOptions) {
                 dom.find('.ul_slide').animate({
                     'left': '+=' + options.slideWidth
                 }, options.slideSpeed, function () {
-                    checkHasNext();
-                    checkHasPrev();
+                    var isRightEnd = checkHasNext();
+                    var isLeftEnd = checkHasPrev();
+                    options.prevCallback({
+                        isRightEnd: isRightEnd,
+                        isLeftEnd: isLeftEnd
+                    });
                 });
             }
         }
@@ -104,8 +114,10 @@ function Slide(jqueryDom, userOptions) {
         width = parseInt(width.replace('px', ''));
         if ((width + position) > options.slideWidth) {
             dom.find(options.nextBtn).addClass('enable');
+            return false;
         } else {
             dom.find(options.nextBtn).removeClass('enable');
+            return true;
         }
     }
 
@@ -119,8 +131,10 @@ function Slide(jqueryDom, userOptions) {
 
         if (position < 0) {
             dom.find(options.prevBtn).addClass('enable');
+            return false;
         } else {
             dom.find(options.prevBtn).removeClass('enable');
+            return true;
         }
     }
 
@@ -130,7 +144,3 @@ function Slide(jqueryDom, userOptions) {
 
 
 
-
-
-
-module.exports = Slide;
